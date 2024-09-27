@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="weather">
+        <input type="text" id="city" placeholder="Город" autocomplete="off" />
+        <div id="weather-info">
+          <div><span id="temperature"></span><span>°C,</span></div>
+          <span id="weather-description"></span>
+        </div>
+      </div>
+      <div id="timeanddate">
+        <div id="time"></div>
+        <div id="date"></div>
+      </div>
+      <div id="todo">
+        <input type="text" placeholder="Добавить задачу" id="todo-input" class="todo-input" autocomplete="off" required />
+        <div id="todo-list"></div>
+        <button id="remove-completed">Удалить выполненные задачи</button>
+      </div>
+    </div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
